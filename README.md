@@ -15,7 +15,7 @@ Port of the render logic from [`audio-visualizer-gui`](../audio-visualizer-gui),
 - **Brightness cap**, **decay speed**, **bass threshold** (Waterdrop trigger sensitivity)
 
 ## Screenshots
-![Keyboard](screenshots/KeyboardEffect.jpeg)
+![Keyboard](screenshots/KeyboardEffect.png)
 
 | Bars — Winamp | Dots — Neon |
 |---|---|
