@@ -1,10 +1,8 @@
 # Custom Audio Visualizer for SignalRGB
 
 A [SignalRGB](https://www.signalrgb.com/) Lightscript audio-reactive effect: five render modes (Bars, Dots, Center, Kitt, Waterdrop), six palette presets, auto-gain, log-scale frequency banding, and adjustable band/color-level counts. Canvas-based, so it drives every device SignalRGB controls — keyboards, strips, anything — not just one specific product.
-
+![AudiVisualizer](screenshots/AudioVisualizer.png)
 Port of the render logic from [`audio-visualizer-gui`](../audio-visualizer-gui), a standalone Rust/egui tool that does the same thing directly over QMK/VIA for custom keyboards. This version runs as a regular SignalRGB effect instead, using SignalRGB's own `engine.audio` API.
-
-**Tags:** `signalrgb`, `lightscript`, `audio-visualizer`, `equalizer`, `rgb`, `javascript`, `canvas`
 
 ## Features
 
@@ -17,6 +15,7 @@ Port of the render logic from [`audio-visualizer-gui`](../audio-visualizer-gui),
 - **Brightness cap**, **decay speed**, **bass threshold** (Waterdrop trigger sensitivity)
 
 ## Screenshots
+![Keyboard](screenshots/KeyboardEffect.jpeg)
 
 | Bars — Winamp | Dots — Neon |
 |---|---|
@@ -41,10 +40,6 @@ Rendered headlessly from the actual effect code with a mocked `engine.audio` fee
 3. Find it under "Keyboard Visualizer Port" in the effects library, apply it to any device, adjust the controls (Effect Mode, Palette, Bar Count, Color Levels, etc.) in its settings panel.
 
 No Pro subscription required — this is a plain user-sideloaded Lightscript.
-
-## Why
-
-SignalRGB's built-in "Audio Spectrum" effect is free but has very limited settings (no mode/palette choice), and some of the more capable audio visualizers are Pro-gated. This is a from-scratch replacement with more controls, built to match the look of an existing custom keyboard RGB tool rather than to mimic SignalRGB's own stock effect.
 
 ## License
 
